@@ -1,0 +1,34 @@
+Program backpropogation
+
+z(Ln) = w0(Ln)*a0(Ln-1) + w1(Ln)*a1(Ln-1) + ... + wk(Ln)*ak(Ln-1) + b(Ln)
+a(Ln) = sigmoid(z(Ln))
+
+
+Cost = (a(Ln) - y)^2
+
+dC/da = 2(a(Ln) - y)
+
+da/dz = sigmoid'(z(Ln))
+
+dz/dw = a(Ln-1)
+
+
+
+
+Cost = Sum ( (activation(Ln)[j] - desired[j])^2 )
+
+
+Wkj
+
+
+dC/dw = dz/dw * da/dz * dC/da
+      = a(Ln - 1) * sigmoid'(z(Ln)) * 2(a(Ln) - y)
+
+  For each layer
+  Cost = (Provided - Desired)^2
+
+  How sensitive is cost function:
+    derivative (Cost/Weight)
+
+Program way to save and load weights and biases
+Split training data into mini-batches

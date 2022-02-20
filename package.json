@@ -1,0 +1,28 @@
+{
+  "name": "neural-network",
+  "version": "0.0.1",
+  "description": "An attempt at making a basic neural network",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel John Ellis",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.23.0",
+    "eslint-config-portsoc": "^0.8.1",
+    "jsdoc": "^3.6.10",
+    "nodemon": "^2.0.7"
+  },
+  "eslintConfig": {
+    "extends": "portsoc",
+    "root": true,
+    "env": {
+      "browser": true
+    }
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  }
+}
