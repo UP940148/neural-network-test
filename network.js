@@ -201,7 +201,7 @@ export class NNetwork {
 
     // Get network cost
     const cost = this.getCost(Y);
-    console.log(cost);
+    // console.log(cost);
     // Y.show();
     // this.activations[3].show();
     // console.log(cost);
