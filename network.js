@@ -322,11 +322,11 @@ export class NNetwork {
   train(count) {
     // this.activations[3].show();
     for (let index = 0; index < count; index++) {
-      this.forwardProp(0);
+      this.forwardProp(index);
       //console.log(this.weights[this.structure.length - 2].data[0])// .show();
       //this.activations[this.structure.length - 1].show();
       //console.log('')
-      this.backProp(0);
+      this.backProp(index);
       //console.log(this.weights[this.structure.length - 2].data[0])// .show();
       //this.activations[this.structure.length - 1].show();
       //console.log('- - - - - - - - - -');
@@ -384,7 +384,7 @@ getTrainingData();
 // fs.writeFileSync(path.join(__dirname, '/0.txt'), imgData[0].toString());
 
 const net = new NNetwork([784, 512, 256, 128, 10]);
-net.train(1000);
+net.train(60000);
 net.forwardProp(0);
 //net.activations[0].show();
 //console.log('')
